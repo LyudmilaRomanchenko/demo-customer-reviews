@@ -21,84 +21,61 @@
 <body>
    
     <div class="container">
-        <div class="single-slide">
-            <div class="fade">
-                <img class="single-slide--photo" src="./img/testimonials1 1.png" alt="">
-                <div class="single-slide--cont">
-                    <p class="single-slide--descrip">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+        <div class="slide-reviews">
+            <div class="slide-reviews__item">
+                <img class="slide-reviews__photo" src="./img/testimonials1 1.png" alt="">
+                <div class="slide-reviews__cont">
+                    <p class="slide-reviews__descrip">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                </div>
+            </div>
+
+            <div class="slide-reviews__item">
+                <img class="slide-reviews__photo" src="./img/testimonials1 2.png" alt="">
+                <div class="slide-reviews__cont">
+                    <p class="slide-reviews__descrip">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
                 </div>
                 
-            </div>
-            <div class="fade">
-                <img class="single-slide--photo" src="./img/testimonials1 2.png" alt="">
-                <div class="single-slide--cont">
-                    <p class="single-slide--descrip">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
-                </div>
-                
                 
             </div>
-            <div class="fade">
-                <img class="single-slide--photo" src="./img/testimonials1 3.png" alt="">
-                <div class="single-slide--cont">
-                    <p class="single-slide--descrip">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+            <div class="slide-reviews__item">
+                <img class="slide-reviews__photo" src="./img/testimonials1 3.png" alt="">
+                <div class="slide-reviews__cont">
+                    <p class="slide-reviews__descrip">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
                 </div>
                 
             </div>
         </div>
 
-        <div class="single-slide-bott">
-            <div class="fade">
-                
-                <p class="single-slide--name">Emily, Los Angeles</p>
+        <div class="slide-customer">
+            <div class="slide-customer__name"> 
+                Emily, Los Angeles
             </div>
-            <div class="fade">
-                
-                <p class="single-slide--name">Emily, Lgggggggg</p>
+            <div class="slide-customer__name">
+                Linda, New York
             </div>
-            <div class="fade">
-                
-                <p class="single-slide--name">Emily, Lojjjjjjjjjjjjj</p>
+            <div class="slide-customer__name">
+                Anna, Kyiv
             </div>
         </div>
         
     </div>
-    
-<!--
-     $('.single-slide').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.single-slide-bott'
-});
-$('.single-slide-bott').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  asNavFor: '.single-slide',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true
-});
--->
-    
 
 <script>
- 
 
-  $('.single-slide').slick({
+  $('.slide-reviews').slick({
  slidesToShow: 1,
  slidesToScroll: 1,
  dots: true,
  arrows: false,
  fade: true,
- asNavFor: '.single-slide-bott',
+ asNavFor: '.slide-customer',
  autoplay:true
 
   });
-$('.single-slide-bott').slick({
+$('.slide-customer').slick({
 slidesToShow: 1,
 slidesToScroll: 1,
-asNavFor: '.single-slide',
+asNavFor: '.slide-reviews',
 dots: true,
 centerMode: true,
 focusOnSelect: true
