@@ -24,10 +24,21 @@
     outline: 1px solid rgb(36, 211, 124);
 }
 
-.slide-reviews::before {
+.slide-reviews {
+    position: relative;
+}
+
+.slide-reviews__item::before {
     content: '';
     background-image: url(../img/ccccc.png);
     background-repeat: no-repeat;
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    top: 132px;
+    left: 50px;
+
+  
     
     
 }
@@ -44,6 +55,8 @@
     margin: 0;
     background-color: rgb(250, 250, 250);
 
+    
+
 }
 
 .slide-reviews__descrip {
@@ -59,12 +72,15 @@
     padding-right: 35px;
 
     
+
+
+    
     /*background-color: #FAFAFA;*/
     background-image: repeating-linear-gradient(to bottom,
       rgb(250,250,250),
-      rgb(250,250,250) 30%,
-      rgb(225,225,225) 30%,
-      rgb(225,225,225) 31%);
+      rgb(250,250,250) 28px,
+      rgb(225,225,225) 28px,
+      rgb(225,225,225) 29px);
 }
 
 .slick-dots li.slick-active button:before {
@@ -93,6 +109,7 @@
     font-size: 20px;
     line-height: 1.86;
     text-align: center;
+    display: block;
     width: 926px;
 
     
