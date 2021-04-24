@@ -1,0 +1,115 @@
+.container {
+  /*position: relative;*/
+  margin: 0 auto;
+  width: 1280px;
+  padding-bottom: 100px;
+  outline: 1px solid red;
+}
+
+.slide-reviews__item {
+  outline: 1px solid #7026c5;
+}
+
+.img {
+  width: 15px;
+  height: 15px;
+}
+
+.slide-reviews,
+.slide-customer {
+  width: 926px;
+  margin: 0 auto;
+  outline: 1px solid #24d37c;
+}
+
+/*.slide-reviews {
+    position: relative;
+}*/
+.slide-reviews__photo {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.slide-reviews__cont {
+  padding: 32px 50px;
+  margin: 0;
+  background-color: #fafafa;
+  /*position: relative;*/
+  outline: 1px solid red;
+}
+
+.slide-reviews__descrip {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 0;
+  position: relative;
+  padding: 0 37px;
+  z-index: 410;
+  outline: 1px solid red;
+  /*background-color: #FAFAFA;*/
+  /*background-image: repeating-linear-gradient(to bottom,
+      rgb(250,250,250),
+      rgb(250,250,250) 28px,
+      rgb(225,225,225) 28px,
+      rgb(225,225,225) 29px);*/
+}
+
+.slide-reviews__descrip::before {
+  /*background-color: rgb(250, 250, 250);*/
+  content: '';
+  background-image: repeating-linear-gradient(to bottom, #fafafa, #fafafa 28px, #e1e1e1 28px, #e1e1e1 29px);
+  position: absolute;
+  width: 822px;
+  height: 74px;
+  top: 0;
+  left: 0;
+  z-index: -400;
+  outline: 1px solid #1355ac;
+}
+
+.slide-reviews__descrip::after {
+  content: '';
+  background-image: url(../img/ccccc.png);
+  background-repeat: no-repeat;
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  z-index: -100;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #C7133E;
+}
+
+/*.slide-customer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}*/
+.slide-customer .slick-dots li.slick-active button:before {
+  background-image: url(../img/home.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 12px;
+  height: 12px;
+  color: transparent;
+}
+
+.slide-customer__name {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
+  display: block;
+  width: 926px;
+  outline: 1px solid #7024d3;
+}
+/*# sourceMappingURL=main.css.map */
